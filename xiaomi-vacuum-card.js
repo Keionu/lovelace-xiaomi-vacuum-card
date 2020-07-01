@@ -213,6 +213,22 @@
                     },
                     computeValue: v => (v === true ? 'Yes' : (v === false ? 'No' : '-')),
                 },
+                braava: {
+                    details: true,
+                    attributes: {
+                        main_brush: 'tank_level',
+                        side_brush: 'detected_pad',
+                        filter: 'tank_present',
+                        sensor: 'lid_closed',
+                    },
+                    labels: {
+                        main_brush: 'Tank',
+                        side_brush: 'Pad',
+                        filter: 'Tank Present',
+                        sensor: 'Lid',
+                    },
+                    computeValue: v => (v === true ? 'Yes' : (v === false ? 'No' : '-')),
+                },
                 robovac: {
                     details: false,
                     buttons: {
