@@ -227,7 +227,7 @@
                         filter: 'Tank Present',
                         sensor: 'Lid',
                     },
-                    computeValue: v => (v === true ? 'Yes' : (v === false ? 'No' : '-')),
+                    computeValue: v => (v === true ? 'Yes' : (v === false ? 'No' : v)),
                 },
                 robovac: {
                     details: false,
